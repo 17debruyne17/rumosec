@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUMOSEC | Proteção de Dados DLP</title>
+    <meta name="description"
+        content="RUMOSEC DLP ajuda sua empresa a prevenir vazamentos de dados, manter a conformidade e proteger informações confidenciais.">
+    <meta name="theme-color" content="#040814">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header id="siteHeader">
+        <div class="wrap header-inner">
+            <a href="#inicio" class="brand">
+                <img src="shield_metallic.png" alt="RUMOSEC Shield Logo" class="brand-shield-logo">
+                <span class="brand-text">RUMO<span>SEC</span></span>
+            </a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+                <a href="#inicio" class="nav-link active">Início</a>
+                <a href="#recursos" class="nav-link">Solução & Recursos</a>
+                <a href="#para-quem-e" class="nav-link">Para quem é</a>
+                <a href="#sobre-contato" class="nav-link">Sobre & Contato</a>
+                <a href="https://wa.me/5541997746862?text=Ol%C3%A1!%20Tenho%20interesse%20no%20RUMOSEC%20DLP."
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-mobile-cta">Tenho interesse</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/5541997746862?text=Ol%C3%A1!%20Tenho%20interesse%20no%20RUMOSEC%20DLP."
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary">Tenho interesse</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ TELA 1: HERO (#inicio) ============ -->
+    <section class="screen-section hero" id="inicio">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="wrap hero-mobile-layout">
+            <!-- 1 & 2: Title and Subtitle -->
+            <div class="hero-content centered">
+                <h1>Proteja o que<br>realmente <span class="highlight">importa.</span></h1>
+                <p class="subtitle">RUMOSEC DLP ajuda sua empresa a prevenir vazamentos de dados, manter a conformidade
+                    e proteger informações confidenciais.</p>
+            </div>
+
+            <!-- 3: A LOGO -->
+            <div class="hero-visual-container">
+                <!-- Background Glowing Circuit Lines & Ground Perspective Effects (Image 3) -->
+                <div class="circuit-overlay-bg">
+                    <svg class="circuit-lines-svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <radialGradient id="centerGlowCore" cx="50%" cy="45%" r="45%">
+                                <stop offset="0%" stop-color="#00d9ff" stop-opacity="0.9" />
+                                <stop offset="30%" stop-color="#0066ff" stop-opacity="0.6" />
+                                <stop offset="70%" stop-color="#002288" stop-opacity="0.25" />
+                                <stop offset="100%" stop-color="#040814" stop-opacity="0" />
+                            </radialGradient>
+                            <linearGradient id="groundRayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#00d9ff" stop-opacity="0.9" />
+                                <stop offset="60%" stop-color="#0066ff" stop-opacity="0.45" />
+                                <stop offset="100%" stop-color="#001133" stop-opacity="0" />
+                            </linearGradient>
+                            <filter id="neonGlowIntense" x="-30%" y="-30%" width="160%" height="160%">
+                                <feGaussianBlur stdDeviation="2.5" result="blur1" />
+                                <feGaussianBlur stdDeviation="6" result="blur2" />
+                                <feMerge>
+                                    <feMergeNode in="blur2" />
+                                    <feMergeNode in="blur1" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- Radiant Central Blue/Cyan Aura Core -->
+                        <circle cx="500" cy="270" r="290" fill="url(#centerGlowCore)" />
+
+                        <!-- Radiant Perspective Rays Radiating Downward from Shield Tip (500, 410) -->
+                        <g stroke="url(#groundRayGrad)" stroke-width="1.8" filter="url(#neonGlowIntense)">
+                            <line x1="500" y1="410" x2="-200" y2="600" opacity="0.4" />
+                            <line x1="500" y1="410" x2="-100" y2="600" opacity="0.5" />
+                            <line x1="500" y1="410" x2="0" y2="600" opacity="0.6" />
+                            <line x1="500" y1="410" x2="100" y2="600" opacity="0.7" />
+                            <line x1="500" y1="410" x2="200" y2="600" opacity="0.8" />
+                            <line x1="500" y1="410" x2="300" y2="600" opacity="0.9" />
+                            <line x1="500" y1="410" x2="380" y2="600" opacity="0.95" />
+                            <line x1="500" y1="410" x2="440" y2="600" opacity="1" />
+                            <line x1="500" y1="410" x2="500" y2="600" opacity="1" />
+                            <line x1="500" y1="410" x2="560" y2="600" opacity="1" />
+                            <line x1="500" y1="410" x2="620" y2="600" opacity="0.95" />
+                            <line x1="500" y1="410" x2="700" y2="600" opacity="0.9" />
+                            <line x1="500" y1="410" x2="800" y2="600" opacity="0.8" />
+                            <line x1="500" y1="410" x2="900" y2="600" opacity="0.7" />
+                            <line x1="500" y1="410" x2="1000" y2="600" opacity="0.6" />
+                            <line x1="500" y1="410" x2="1100" y2="600" opacity="0.5" />
+                            <line x1="500" y1="410" x2="1200" y2="600" opacity="0.4" />
+                        </g>
+
+                        <!-- Glowing Ground Horizon Grid Lines -->
+                        <line x1="-100" y1="460" x2="1100" y2="460" stroke="#00d9ff" stroke-width="1.2" opacity="0.45"
+                            filter="url(#neonGlowIntense)" />
+                        <line x1="-100" y1="520" x2="1100" y2="520" stroke="#0066ff" stroke-width="1.5"
+                            opacity="0.35" />
+
+                        <!-- Left Futuristic Circuit Network (Clean, ring terminal nodes) -->
+                        <g stroke="#00d9ff" stroke-width="1.8" fill="none" filter="url(#neonGlowIntense)">
+                            <!-- Line 1: Top dot -->
+                            <path d="M 335 110 L 240 110 L 200 60 L 50 60" opacity="0.9" />
+                            <circle cx="50" cy="60" r="3.5" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 2: Ring node terminal -->
+                            <path d="M 325 160 L 270 160 L 230 110 L 140 110" opacity="0.9" />
+                            <circle cx="140" cy="110" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="140" cy="110" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 3: Long upper trace -->
+                            <path d="M 320 210 L 220 210 L 180 170 L -20 170" opacity="0.95" />
+                            <circle cx="-20" cy="170" r="4" fill="#00d9ff" stroke="none" />
+                            <circle cx="180" cy="170" r="2.5" fill="#ffffff" stroke="none" />
+
+                            <!-- Line 4: Ring node terminal mid -->
+                            <path d="M 318 270 L 250 270 L 210 230 L 80 230" opacity="0.9" />
+                            <circle cx="80" cy="230" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="80" cy="230" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 5: Ring node terminal lower -->
+                            <path d="M 322 330 L 230 330 L 190 290 L -40 290" opacity="0.9" />
+                            <circle cx="-40" cy="290" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="-40" cy="290" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 6: Bottom trace -->
+                            <path d="M 335 390 L 270 390 L 230 430 L 20 430" opacity="0.85" />
+                            <circle cx="20" cy="430" r="3.5" fill="#00d9ff" stroke="none" />
+                        </g>
+
+                        <!-- Right Futuristic Circuit Network (Clean, ring terminal nodes) -->
+                        <g stroke="#00d9ff" stroke-width="1.8" fill="none" filter="url(#neonGlowIntense)">
+                            <!-- Line 1: Top dot -->
+                            <path d="M 665 110 L 760 110 L 800 60 L 950 60" opacity="0.9" />
+                            <circle cx="950" cy="60" r="3.5" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 2: Ring node terminal -->
+                            <path d="M 675 160 L 730 160 L 770 110 L 860 110" opacity="0.9" />
+                            <circle cx="860" cy="110" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="860" cy="110" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 3: Long upper trace -->
+                            <path d="M 680 210 L 780 210 L 820 170 L 1020 170" opacity="0.95" />
+                            <circle cx="1020" cy="170" r="4" fill="#00d9ff" stroke="none" />
+                            <circle cx="820" cy="170" r="2.5" fill="#ffffff" stroke="none" />
+
+                            <!-- Line 4: Ring node terminal mid -->
+                            <path d="M 682 270 L 750 270 L 790 230 L 920 230" opacity="0.9" />
+                            <circle cx="920" cy="230" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="920" cy="230" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 5: Ring node terminal lower -->
+                            <path d="M 678 330 L 770 330 L 810 290 L 1040 290" opacity="0.9" />
+                            <circle cx="1040" cy="290" r="6" stroke="#00d9ff" stroke-width="2" fill="#040814" />
+                            <circle cx="1040" cy="290" r="2" fill="#00d9ff" stroke="none" />
+
+                            <!-- Line 6: Bottom trace -->
+                            <path d="M 665 390 L 730 390 L 770 430 L 980 430" opacity="0.85" />
+                            <circle cx="980" cy="430" r="3.5" fill="#00d9ff" stroke="none" />
+                        </g>
+
+                        <!-- Glowing Particles along Rays and Circuit Nodes -->
+                        <g filter="url(#neonGlowIntense)">
+                            <circle cx="500" cy="410" r="4" fill="#ffffff" />
+                            <circle cx="440" cy="480" r="3.5" fill="#ffffff" />
+                            <circle cx="560" cy="480" r="3.5" fill="#ffffff" />
+                            <circle cx="380" cy="540" r="3" fill="#00d9ff" />
+                            <circle cx="620" cy="540" r="3" fill="#00d9ff" />
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- 3D Metallic Shield -->
+                <img src="shield_metallic.png" alt="RUMOSEC Metallic Shield" class="hero-shield-img">
+            </div>
+
+            <!-- 4: Buttons underneath logo -->
+            <div class="hero-actions centered">
+                <a href="#sobre-contato" class="btn btn-primary"><svg width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg> Agende uma conversa</a>
+                <a href="#recursos" class="btn btn-ghost">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    Conhecer os serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TELA 2: RECURSOS (#recursos) ============ -->
+    <section class="screen-section features-section" id="recursos">
+        <div class="wrap">
+            <div class="section-header">
+                <span class="tag">RUMOSEC DLP</span>
+                <h2>Controle. Detecte. Proteja.</h2>
+                <p>Nossa solução DLP monitora, detecta e protege dados sensíveis em toda a sua empresa, garantindo
+                    segurança e conformidade.</p>
+            </div>
+
+            <div class="cards-4grid">
+                <div class="card-feature">
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3>Prevenção de Vazamentos</h3>
+                    <p>Evite o envio indevido de dados confidenciais por e-mail, web, dispositivos USB e muito mais.</p>
+                </div>
+
+                <div class="card-feature">
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h3>Detecção Inteligente</h3>
+                    <p>Identifique automaticamente dados sensíveis com análise avançada de conteúdo e contexto.</p>
+                </div>
+
+                <div class="card-feature">
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                    </div>
+                    <h3>Conformidade</h3>
+                    <p>Atenda às principais normas de segurança e proteção de dados.</p>
+                </div>
+
+                <div class="card-feature">
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                            <path d="M6 12l4-4 4 4 4-4" />
+                        </svg>
+                    </div>
+                    <h3>Visibilidade Total</h3>
+                    <p>Monitore atividades, gere relatórios e tenha controle completo das informações críticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TELA 3: PARA QUEM É & 5 STEPS (#para-quem-e) ============ -->
+    <section class="screen-section target-section" id="para-quem-e">
+        <div class="wrap">
+            <div class="target-layout">
+                <div class="target-info">
+                    <span class="tag">PARA QUEM É</span>
+                    <h2>Feito para empresas que <span class="highlight">levam dados a sério.</span></h2>
+                    <p class="desc">Do pequeno negócio à grande empresa, o RUMOSEC DLP se adapta à sua realidade e
+                        cresce com você.</p>
+
+                    <div class="badge-list">
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Empresas de todos os portes
+                        </div>
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Setores regulados
+                        </div>
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            Equipes de TI e Segurança
+                        </div>
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                            MSPs e Provedores
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-container">
+                    <h3 class="flow-title">Como o <span>RUMOSEC DLP</span> protege sua empresa</h3>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                            </div>
+                            <h4>Identifica dados sensíveis</h4>
+                            <p>Encontre informações importantes onde estiverem.</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </div>
+                            <h4>Monitora atividades</h4>
+                            <p>Acompanha o uso e compartilhamento de dados.</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                </svg>
+                            </div>
+                            <h4>Aplica políticas</h4>
+                            <p>Impede vazamentos e ações indevidas em tempo real.</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                                </svg>
+                            </div>
+                            <h4>Gera alertas</h4>
+                            <p>Visibilidade completa e auditoria contínua.</p>
+                        </div>
+
+                        <div class="flow-step">
+                            <div class="flow-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    <polyline points="9 12 11 14 15 10" />
+                                </svg>
+                            </div>
+                            <h4>Mantém conformidade</h4>
+                            <p>Atenda às exigências legais e regulatórias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TELA 4: SOBRE & CONTATO (#sobre-contato) ============ -->
+    <div class="contact-screen-section" id="sobre-contato">
+        <div class="wrap">
+            <!-- Chamfered Direct Contact Card (Agende uma conversa RUMOSEC) -->
+            <div class="direct-contact-container">
+                <div class="direct-contact-card">
+                    <div class="card-gold-bar"></div>
+                    <span class="direct-contact-tag">// Atendimento direto RUMOSEC</span>
+
+                    <h2 class="direct-contact-title">Agende uma <span class="accent-serif-italic">conversa.</span></h2>
+
+                    <p class="direct-contact-subtitle">Fale diretamente com nossa equipe pelo WhatsApp para tirar
+                        dúvidas, alinhar necessidades e agendar seu diagnóstico de proteção de dados.</p>
+
+                    <a href="https://wa.me/5541997746862?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20o%20RUMOSEC%20DLP."
+                        target="_blank" rel="noopener noreferrer" class="btn-whatsapp-direct">
+                        <svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg>
+                        Iniciar conversa no WhatsApp
+                    </a>
+
+                    <div class="contact-info-strip">
+                        <span class="info-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            (41) 99774-6862
+                        </span>
+                        <span class="strip-dot">•</span>
+                        <span class="info-item">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            contato@rumosec.com.br
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- FOOTER INTEGRADO NO FINAL DA TELA 4 -->
+        <footer>
+            <div class="wrap">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#inicio" class="brand">
+                            <img src="shield_metallic.png" alt="RUMOSEC" class="brand-shield-logo">
+                            <span class="brand-text">RUMO<span>SEC</span></span>
+                        </a>
+                        <p>Soluções inteligentes e avançadas para prevenção de vazamento de dados (DLP) e segurança da
+                            informação.</p>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#recursos">Solução & Recursos</a></li>
+                            <li><a href="#para-quem">Para quem é</a></li>
+                            <li><a href="#sobre-contato">Sobre & Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Soluções DLP</h4>
+                        <ul>
+                            <li><a href="#recursos">Proteção Ativa 24/7</a></li>
+                            <li><a href="#recursos">Controle de Dispositivos USB</a></li>
+                            <li><a href="#recursos">Bloqueio de Exfiltração</a></li>
+                            <li><a href="#recursos">Conformidade LGPD</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Fale Conosco</h4>
+                        <ul>
+                            <li
+                                style="color:var(--metal-light); font-size:13.5px; display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                contato@rumosec.com.br
+                            </li>
+                            <li
+                                style="color:var(--metal-light); font-size:13.5px; display:flex; align-items:center; gap:8px;">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                (41) 99774-6862
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 RUMOSEC. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ============ MODAL DE AGENDAMENTO ============ -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalCloseBtn" type="button" aria-label="Fechar">✕</button>
+
+            <div id="modalFormWrap">
+                <h3 style="font-size:1.5rem; margin-bottom:8px;">Tenho Interesse no RUMOSEC DLP</h3>
+                <p style="color:var(--metal-light); font-size:14px; margin-bottom:20px;">Preencha seus dados para
+                    receber uma demonstração exclusiva.</p>
+
+                <form id="scheduleForm">
+                    <div class="field">
+                        <label for="fNome">Nome completo</label>
+                        <input type="text" id="fNome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="field">
+                        <label for="fEmail">E-mail corporativo</label>
+                        <input type="email" id="fEmail" placeholder="voce@empresa.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="fEmpresa">Empresa</label>
+                        <input type="text" id="fEmpresa" placeholder="Nome da sua empresa" required>
+                    </div>
+                    <button class="btn btn-primary" style="width:100%; margin-top:12px;" type="submit">Enviar
+                        solicitação</button>
+                </form>
+            </div>
+
+            <div id="modalSuccess" style="display:none; text-align:center; padding:20px 0;">
+                <h4 style="font-size:1.3rem; color:var(--cyan); margin-bottom:10px;">Solicitação enviada com sucesso!
+                </h4>
+                <p style="color:var(--metal-light); font-size:14.5px;">Nossa equipe entrará em contato em breve.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
