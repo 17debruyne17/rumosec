@@ -229,6 +229,22 @@ header.scrolled {
     transform: translateY(-2px);
 }
 
+.btn-ghost {
+    background: #ffffff;
+    color: #040814;
+    border: 1px solid #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+}
+
+.btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0066ff;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0, 217, 255, 0.4);
+}
+
 /* Hamburger button */
 .hamburger {
     display: none;
@@ -312,23 +328,33 @@ header.scrolled {
 .hero-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap: 60px;
     align-items: center;
     position: relative;
     z-index: 2;
     width: 100%;
 }
 
-.hero-content h1,
+.hero-content h1 {
+    font-size: clamp(3.2rem, 5.0vw, 4.6rem);
+    font-weight: 800;
+    margin-bottom: 22px;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
+    text-align: center;
+    max-width: 100%;
+}
+
 .section-header h2,
 .target-info h2,
 .direct-contact-title {
-    font-size: clamp(3.6rem, 5.6vw, 5.2rem);
+    font-size: clamp(2.8rem, 4.2vw, 4.0rem);
     font-weight: 800;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     letter-spacing: -0.015em;
-    line-height: 1.1;
+    line-height: 1.15;
     text-align: center;
+    max-width: 100%;
 }
 
 .highlight, .accent {
@@ -344,14 +370,19 @@ header.scrolled {
 
 .hero-content {
     text-align: center;
+    max-width: 680px;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
 }
 
 .hero-content .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.38rem;
     color: var(--metal-light);
-    max-width: 650px;
-    margin-bottom: 38px;
-    line-height: 1.6;
+    max-width: 640px;
+    margin-top: 22px;
+    margin-bottom: 42px;
+    line-height: 1.65;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -361,14 +392,15 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 22px;
     flex-wrap: wrap;
+    margin-top: 8px;
 }
 
 .hero-actions .btn {
-    padding: 16px 34px;
-    font-size: 1.1rem;
-    border-radius: var(--radius);
+    padding: 18px 42px;
+    font-size: 1.2rem;
+    border-radius: 14px;
 }
 
 /* Hero Shield Visual Container */
@@ -423,23 +455,28 @@ header.scrolled {
 }
 
 .section-header h2 {
-    font-size: clamp(3.0rem, 4.8vw, 4.4rem);
-    font-weight: 700;
+    font-size: clamp(2.6rem, 3.8vw, 3.6rem);
+    font-weight: 800;
     margin-bottom: 16px;
-    line-height: 1.12;
+    line-height: 1.15;
 }
 
 .section-header p {
     color: var(--metal-light);
     font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 760px;
+    max-width: 860px;
     margin: 0 auto;
 }
 
 /* ============ TELA 2: RECURSOS (#recursos) ============ */
 .features-section {
     background: radial-gradient(ellipse 1100px 600px at 50% 50%, rgba(0, 102, 255, 0.15), transparent 70%);
+}
+
+.features-section .section-header {
+    transform: translateY(-32px);
+    margin-bottom: 20px;
 }
 
 .cards-4grid {
@@ -512,8 +549,14 @@ header.scrolled {
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
     gap: 48px;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
+}
+
+.target-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .target-info .tag {
@@ -527,8 +570,8 @@ header.scrolled {
 }
 
 .target-info h2 {
-    font-size: clamp(2.6rem, 4vw, 3.6rem);
-    font-weight: 700;
+    font-size: clamp(2.6rem, 3.8vw, 3.6rem);
+    font-weight: 800;
     margin-bottom: 22px;
     line-height: 1.15;
 }
@@ -543,25 +586,33 @@ header.scrolled {
 .badge-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 18px;
 }
 
 .badge-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 18px;
+    gap: 14px;
+    padding: 18px 24px;
     background: rgba(9, 18, 38, 0.85);
-    border: 1px solid rgba(0, 102, 255, 0.3);
-    border-radius: var(--radius);
-    font-size: 14px;
-    font-weight: 500;
+    border: 1px solid rgba(0, 102, 255, 0.35);
+    border-radius: 14px;
+    font-size: 1.15rem;
+    font-weight: 600;
     color: var(--white);
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.badge-item:hover {
+    border-color: var(--cyan);
+    background: rgba(0, 102, 255, 0.15);
 }
 
 .badge-item svg {
     color: var(--cyan);
     flex-shrink: 0;
+    width: 24px;
+    height: 24px;
 }
 
 /* 5 Steps Process */
@@ -569,14 +620,21 @@ header.scrolled {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 36px 28px;
-    box-shadow: var(--shadow-card);
+    padding: 40px 32px;
+    height: 100%;
+    min-height: auto;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45), inset 0 0 35px rgba(0, 217, 255, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .flow-title {
-    font-size: 1.35rem;
+    font-size: 1.7rem;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .flow-title span {
@@ -586,7 +644,7 @@ header.scrolled {
 .flow-steps {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 14px;
+    gap: 18px;
     position: relative;
 }
 
@@ -597,43 +655,49 @@ header.scrolled {
 }
 
 .flow-icon {
-    width: 48px;
-    height: 48px;
+    width: 68px;
+    height: 68px;
     border-radius: 50%;
     background: rgba(0, 102, 255, 0.16);
-    border: 1.5px solid rgba(0, 217, 255, 0.4);
+    border: 2px solid rgba(0, 217, 255, 0.45);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 16px;
+    margin: 0 auto 22px;
     color: var(--cyan);
-    transition: transform 0.25s ease, background-color 0.25s ease;
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.flow-icon svg {
+    width: 28px;
+    height: 28px;
 }
 
 .flow-step:hover .flow-icon {
     background: var(--blue-primary);
+    border-color: var(--cyan);
     color: var(--white);
-    transform: scale(1.1);
+    transform: scale(1.12);
 }
 
 .flow-step h4 {
-    font-size: 15px;
+    font-size: 1.18rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: var(--white);
 }
 
 .flow-step p {
-    font-size: 13.5px;
+    font-size: 0.96rem;
     color: var(--metal-light);
-    line-height: 1.45;
+    line-height: 1.55;
 }
 
 /* Connecting Line */
 .flow-steps::before {
     content: "";
     position: absolute;
-    top: 31px;
+    top: 34px;
     left: 10%;
     right: 10%;
     height: 2px;
@@ -689,8 +753,8 @@ header.scrolled {
 }
 
 .direct-contact-title {
-    font-size: clamp(2.6rem, 4vw, 3.6rem);
-    font-weight: 700;
+    font-size: clamp(2.6rem, 3.8vw, 3.6rem);
+    font-weight: 800;
     color: #ffffff;
     margin-bottom: 18px;
     line-height: 1.15;

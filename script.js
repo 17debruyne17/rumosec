@@ -8,7 +8,7 @@
     var header = document.getElementById('siteHeader');
     var navLinksList = document.querySelectorAll('.nav-link');
 
-    var sectionIds = ['inicio', 'recursos', 'diferenciais', 'sobre-contato'];
+    var sectionIds = ['inicio', 'recursos', 'para-quem-e', 'sobre-contato'];
     var trackedSections = [];
 
     function cacheSectionPositions() {
