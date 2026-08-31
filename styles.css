@@ -159,7 +159,7 @@ header.scrolled .brand-text {
 }
 
 .nav-mobile-cta {
-    display: none;
+    display: none !important;
 }
 
 .nav-link {
