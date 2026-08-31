@@ -341,16 +341,7 @@ header.scrolled {
     width: 100%;
 }
 
-.hero-content h1 {
-    font-size: clamp(3.2rem, 5.0vw, 4.6rem);
-    font-weight: 800;
-    margin-bottom: 22px;
-    letter-spacing: -0.015em;
-    line-height: 1.12;
-    text-align: center;
-    max-width: 100%;
-}
-
+.hero-content h1,
 .section-header h2,
 .target-info h2,
 .direct-contact-title {
@@ -1275,8 +1266,25 @@ footer {
     }
 
     .hero {
+        min-height: 100vh !important;
+        min-height: 100dvh !important;
         padding-top: 85px !important;
-        padding-bottom: 40px !important;
+        padding-bottom: 30px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    }
+
+    .hero-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: space-between !important;
+        flex: 1 !important;
+        width: 100% !important;
+        gap: 0 !important;
     }
 
     .hero-layout .hero-content {
@@ -1290,36 +1298,38 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: clamp(1.85rem, 6vw, 2.4rem) !important;
+        font-size: clamp(2.55rem, 8.2vw, 3.0rem) !important;
         font-weight: 800 !important;
-        line-height: 1.15 !important;
-        margin-top: 0 !important;
-        margin-bottom: 16px !important;
+        line-height: 1.12 !important;
+        margin-top: 5px !important;
+        margin-bottom: 14px !important;
         text-align: center !important;
         max-width: 100% !important;
     }
 
     .hero-layout .hero-content .subtitle {
-        font-size: 1.02rem !important;
+        font-size: 1.15rem !important;
         line-height: 1.55 !important;
-        max-width: 340px !important;
-        margin: 0 auto 22px !important;
+        max-width: 355px !important;
+        margin: 10px auto 20px !important;
         text-align: center !important;
     }
 
     .hero-layout .hero-actions {
         order: 2;
-        margin-top: 14px;
-        margin-bottom: 20px;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
     }
 
     .hero-layout .hero-visual-container {
         order: 3;
-        min-height: 200px !important;
+        min-height: 260px !important;
+        margin-top: auto !important;
+        margin-bottom: 0 !important;
     }
 
     .hero-shield-img {
-        max-width: 200px !important;
+        max-width: 275px !important;
     }
 
     .circuit-overlay-bg {
@@ -1330,7 +1340,8 @@ footer {
     .section-header h2,
     .target-info h2,
     .direct-contact-title {
-        font-size: clamp(2.4rem, 8vw, 3.4rem);
+        font-size: 1.8rem !important;
+        font-weight: 800 !important;
         line-height: 1.15;
         text-align: center;
     }
@@ -1339,15 +1350,15 @@ footer {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        gap: 12px;
+        gap: 10px;
     }
 
     .hero-actions .btn {
         width: 100%;
-        max-width: 310px;
-        padding: 13px 22px !important;
-        font-size: 0.98rem !important;
-        border-radius: 12px;
+        max-width: 270px !important;
+        padding: 11px 20px !important;
+        font-size: 0.92rem !important;
+        border-radius: 10px !important;
         justify-content: center;
     }
 
@@ -1652,28 +1663,32 @@ footer {
 
 @media (max-width: 480px) {
     .hero {
-        padding-top: 80px !important;
-        padding-bottom: 30px !important;
+        min-height: auto !important;
+        height: auto !important;
+        padding-top: 90px !important;
+        padding-bottom: 65px !important;
     }
 
     .hero-content h1 {
-        font-size: 1.85rem !important;
+        font-size: 2.5rem !important;
         font-weight: 800 !important;
-        line-height: 1.15 !important;
+        line-height: 1.12 !important;
+        margin-top: 10px !important;
+        margin-bottom: 16px !important;
     }
 
     .hero-layout .hero-content .subtitle {
         font-size: 1.02rem !important;
         max-width: 320px !important;
-        margin: 0 auto 20px !important;
+        margin: 10px auto 20px !important;
     }
 
     .hero-shield-img {
-        max-width: 200px !important;
+        max-width: 220px !important;
     }
 
     .hero-visual-container {
-        min-height: 200px !important;
+        min-height: 210px !important;
     }
 
     .modal {
