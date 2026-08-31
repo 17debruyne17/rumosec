@@ -318,8 +318,8 @@ header.scrolled {
     min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
-    padding-top: clamp(70px, 8vh, 100px);
-    padding-bottom: clamp(30px, 4vh, 60px);
+    padding-top: clamp(60px, 6vh, 90px);
+    padding-bottom: clamp(20px, 3vh, 40px);
     box-sizing: border-box;
     background:
         radial-gradient(ellipse 1000px 700px at 50% 30%, rgba(0, 102, 255, 0.28), transparent 75%),
@@ -1227,8 +1227,8 @@ footer {
     }
 
     .hero {
-        padding-top: 75px;
-        padding-bottom: 35px;
+        padding-top: clamp(55px, 5vh, 70px);
+        padding-bottom: clamp(20px, 3vh, 30px);
     }
 
     .hero-content h1 {
