@@ -194,28 +194,6 @@
         });
     }
 
-    /* ============ Modal Schedule Form -> Redirect to WhatsApp ============ */
-    var scheduleForm = document.getElementById('scheduleForm');
-    if (scheduleForm) {
-        scheduleForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            var nome = document.getElementById('fNome') ? document.getElementById('fNome').value.trim() : '';
-            var email = document.getElementById('fEmail') ? document.getElementById('fEmail').value.trim() : '';
-            var empresa = document.getElementById('fEmpresa') ? document.getElementById('fEmpresa').value.trim() : '';
-
-            var text = "Olá! Tenho interesse no RUMOSEC DLP e gostaria de agendar uma demonstração.\n\n" +
-                "*Nome:* " + nome + "\n" +
-                "*E-mail:* " + email + "\n" +
-                "*Empresa:* " + empresa;
-
-            window.open("https://wa.me/" + waNumber + "?text=" + encodeURIComponent(text), "_blank");
-
-            var overlay = document.getElementById('modalOverlay');
-            if (overlay) overlay.classList.remove('open');
-            document.body.style.overflow = '';
-            scheduleForm.reset();
-        });
-    }
 
     /* ============ FAQ Accordion ============ */
     var faqItems = document.querySelectorAll('.faq-item');
