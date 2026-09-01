@@ -384,6 +384,7 @@ header.scrolled {
     color: var(--cyan);
     background: linear-gradient(135deg, #00d9ff 0%, #5de2ff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -778,6 +779,7 @@ header.scrolled {
     color: var(--cyan);
     background: linear-gradient(135deg, #00d9ff 0%, #0066ff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     padding-right: 4px;
