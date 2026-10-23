@@ -1,0 +1,9 @@
+RUMOSEC - efeitos originais restaurados
+
+A imagem hero-effects-hd.jpg (2752 x 1536) e usada diretamente na secao inicial.
+Ela ja contem escudo, circuitos, particulas e brilho originais.
+O escudo adicional e os circuitos CSS foram desativados SOMENTE no desktop
+para evitar duplicacao e linhas atravessando o escudo.
+Os cartoes continuam numa linha independente.
+
+Abra index.html com Live Server e atualize com Ctrl+Shift+R.

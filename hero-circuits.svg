@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none">
+<defs><filter id="glow"><feGaussianBlur stdDeviation="5"/></filter><linearGradient id="line"><stop stop-color="#00dfff" stop-opacity="0"/><stop offset=".35" stop-color="#00dfff" stop-opacity=".8"/><stop offset="1" stop-color="#04baff" stop-opacity=".2"/></linearGradient></defs>
+<g stroke="url(#line)" stroke-width="2"><path d="M10 185H225l45 40h135M0 250h185l55 45h165M30 340h190l45-35h140M40 430h180l45-55h140M995 180H775l-45 45H600M1000 250H810l-55 45H600M995 340H790l-45-35H600M975 425H780l-45-50H600"/></g>
+<g fill="#00dfff" stroke="#64f7ff" stroke-width="2"><circle cx="405" cy="225" r="4"/><circle cx="405" cy="295" r="4"/><circle cx="405" cy="305" r="4"/><circle cx="405" cy="375" r="4"/><circle cx="600" cy="225" r="4"/><circle cx="600" cy="295" r="4"/><circle cx="600" cy="305" r="4"/><circle cx="600" cy="375" r="4"/></g>
+<g opacity=".5" filter="url(#glow)" stroke="#00dfff" stroke-width="7"><path d="M10 185H225l45 40h135M995 180H775l-45 45H600M0 250h185l55 45h165M1000 250H810l-55 45H600"/></g>
+</svg>
